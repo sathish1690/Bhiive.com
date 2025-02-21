@@ -1,0 +1,911 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import "../node_modules/@flaticon/flaticon-uicons/css/all/all.css";
+
+$app-backgroundgradiant: linear-gradient(to bottom, #ff9623,#db6f02);
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  body {
+    font-family: "Poppins", sans-serif!important;
+}
+a{
+  text-decoration: none!important;
+  color: #fff!important;
+}
+
+.owl-theme .owl-nav [class*=owl-]  {
+    color: #FFF;
+    font-size: 1px;
+    margin: 5px;
+    padding: 2px 10px!important;
+    background: #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 0px!important;
+}
+.owl-theme .owl-nav [class*=owl-]:hover, .owl-theme .owl-nav [class*=owl-]:active  {
+    background: #0d6efd;
+    color: #FFF;
+    text-decoration: none;
+}
+.owl-carousel .owl-stage {
+  display: flex;
+}
+.owl-carousel .owl-item {
+  display: flex;
+  /*flex: 1 0 auto;*/
+}
+.owl-carousel .blog-card {
+  display: flex;
+  flex-direction: column;
+}
+.owl-carousel .blog-card .blog-card-body {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+}
+.owl-carousel .blog-card .blog-card-body .flex-text {
+  flex-grow: 1;
+}
+
+/**/
+/*Header*/
+.header{
+  
+&__nav {
+  background:#010715;
+  padding: 0px!important;
+}
+&__logo{
+  position: relative;
+  // background-image:linear-gradient(to right, #ff9623, #db6f02);
+  padding: 8px!important;
+  margin: 0px!important;
+
+  img{
+    width: 120px;
+  }
+}
+
+&__link{
+  .btn.btn-primary {
+  background: $app-backgroundgradiant;
+  border: none;
+  font-size: 14px;
+}
+&.active, &.show {
+  color: #fff!important;
+}
+}
+
+.navbar-row{
+  width: 100%;
+}
+button.navbar-toggler i{
+  color: #fff;
+}
+
+&__menu {
+  // background: #182132;
+  padding: 12px;
+ li a{
+   margin: 0px 9px;
+    font-size: 14px;
+}
+
+}
+
+&__support { 
+  li{
+  font-size:  13px;
+  color: #fff;
+}
+ span {
+  color: #fff;
+}
+i.fa-brands.fa-facebook-f {
+  background: $app-backgroundgradiant;
+  padding: 6px 9px 6px 9px;
+  border-radius: 85%;
+}
+i.fa-brands.fa-twitter, i.fa-brands.fa-instagram, i.fa-brands.fa-linkedin-in{
+  background: $app-backgroundgradiant;
+  padding: 6px 7px 6px 7px;
+  border-radius: 85%;
+}
+}
+
+}
+
+/*Banner Section*/
+.bannersec{
+ img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+}
+
+/*About  Section*/
+.about__sec{
+  background:#010715;
+
+.about-card{
+  background:#182132!important;
+  border-radius: 3px;
+  height: 100%!important;
+}
+
+&__cardsec{
+  position: relative;
+  top: -50px;
+  display: flex;
+  
+  &__cardtitle{
+    color: #fff;
+    font-size: 20px;
+  }
+  &__cardtext{
+    color: #fff;
+    font-size: 12px;
+  }
+   .material-symbols-outlined{
+    color: #db6f02;
+    background: #193c5a;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .cardimg { 
+    width: 40px;
+    height: 40px;
+    background: #00001e !important;
+    padding: 8px;
+    border-radius: 5px;
+  }
+}
+
+&__cnt {
+  &__title{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 35px;
+  }
+  &__subtitle{
+    color: #fa962c;
+    margin-bottom: 20px;
+    font-size: 15px;
+    
+    span.border-title {
+      background: #fa962c;
+      width: 100px;
+      height: 2px;
+      transform: rotate(0deg);
+      display: inline-block;
+      margin-right: 3px;
+    }
+  }
+  
+  &__desc{
+  color: #fff;
+  font-size: 13px;
+  line-height: 25px;
+}
+ .about-card .card-title{
+  color: #fff;
+  font-size: 15px;
+}
+ .about-card .card-text{
+  color: #fff;
+  font-size:12px;
+  line-height: 20px;
+}
+h5.card-title.about-card-title .border-title {
+  background: #2d4166;
+  width: 52px;
+  height: 2px;
+  transform: rotate(0deg);
+  display: inline-block;
+  margin-right: 3px;
+}
+.card-refer .material-symbols-outlined{
+  color: #fff;
+  background: #db6f02;
+  border-radius: 5px;
+}
+.arrow.material-symbols-outlined.float-end {
+  background: #00001e ! Important;
+  font-size: 15px;
+  padding: 5px;
+}
+
+}
+
+.container.about-cnt img {
+  width: 450px;
+}
+}
+
+/*What We Do Section*/
+.service__sec{
+  background:url(./assets/images/servicemap.png) #182132;
+  background-size: contain;
+
+&__card{
+  background: url(./assets/images/buble.png) no-repeat top -98px right -99px #030617!important;
+  border-radius: 3px;  
+}
+
+&__cardsec{
+ &__title{
+  color: #fff;
+  font-size: 23px;
+  font-family: "Roboto", sans-serif;
+}
+&__cardbody{
+  padding: 15px;
+  img {
+    width: 45px;
+  }
+}
+.material-symbols-outlined{
+  color: #db6f02;
+  background: #193c5a;
+  border-radius: 5px;
+  cursor: pointer;
+}
+} 
+
+&__title{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 35px;
+}
+&__desc{
+  color: #fff;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+&__subtitle {
+  color: #fa962c;
+  margin-bottom: 20px;
+  font-size: 15px;
+
+  .border-title {
+    background: #fa962c;
+    width: 100px;
+    height: 2px;
+    transform: rotate(0deg);
+    display: inline-block;
+    margin-right: 3px;
+  }
+}
+
+
+.btn.btn-primary{
+  background: linear-gradient(to bottom, #ff9623,#db6f02);
+  border: none;
+  font-size: 15px;
+  padding: 10px 20px;
+  font-weight: 500;
+  color: #333;
+}
+}
+
+
+/*Benefits of Digital Marketing*/
+.feedback__sec{
+  background: url(./assets/images/servicesbg.png)#010715 no-repeat top;
+  background-size: calc(190% + 1px);
+
+&__cnt {
+  &__title {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 35px;
+}
+.border-title {
+  background: #fa962c;
+  width: 100px;
+  height: 2px;
+  transform: rotate(0deg);
+  display: inline-block;
+  margin-right: 3px;
+}
+&__subtitle{
+  color: #fa962c;;
+  font-size: 15px;
+}
+&__desc  {
+  color: #fff;
+  font-size: 13px;
+  line-height: 20px;
+}
+&__accordionheader{
+  font-size: 18px;
+  border-bottom: 1px solid #fff;
+  margin: 0px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #fff;
+}
+&__faqtitle {
+  display: inline-block;
+  position: relative;
+  top: -22px;
+  left: 34px;
+  font-size: 17px;
+  font-weight: 500;
+}
+button.accordion-button.collapsed {
+  background: transparent!important;
+  color: #fff!important;
+  border: none!important;
+}
+
+ .accordion-item {
+  background: transparent;
+  border: none!important;
+  border-bottom:1px solid #fff!important;
+}
+ .accordion-body {
+  color: #fff;
+  font-size: 13px;
+  line-height: 20px;
+}
+ .accordion-button:not(.collapsed) {
+  background: transparent;
+  color: #fff;
+  box-shadow: none;
+}
+  .accordion-button:focus {
+  border: none!important;
+  border-bottom: 0px solid #fff!important;
+  box-shadow: none;
+}
+.accordion-item:last-of-type {
+  border-radius:0px;
+}
+.accordion-button::after {
+  content:"";
+  background: url("./assets/images/plus.png") no-repeat #ff9623!important;
+  height: 25px!important;
+  width: 25px!important;
+  position: absolute;
+  left: 0px;
+  top: 13px;
+  border-radius: 3px;
+}
+.accordion-button:not(.collapsed)::after {
+  content:"";
+  background: url("./assets/images/minus.png") no-repeat #ff9623!important;
+  position: absolute;
+  left: 0px!important;
+  top: 13px!important;
+  border-radius: 3px;
+}
+}
+
+&__ourbenifitscnt {
+  width: 100%;
+  display: inline-block;
+  border-radius: 5px;
+  color: #fff;
+  padding: 9px 11px;
+  box-shadow: 0px 2px 0px #db6f02;
+
+  i {
+    background: #db6f02;
+    padding: 5px 5px 3px 5px;
+    border-radius: 100%;
+    font-size: 10px;
+    color: #fff;
+    margin-right: 5px;
+  }
+}
+&__heading, &__headingsub{
+  color: #fff;
+}
+}
+
+/*Making Your Successful Business*/
+.project__sec
+{
+  background: #182132;
+
+&__desc{
+color: #fff;
+font-size: 14px;
+}
+&__img{
+img {
+  height:60px;
+}
+}
+}
+
+.business__sec{
+  background:url(./assets/images/projectbg.png)no-repeat #010715 center;
+  padding: 50px 0px;
+  background-size: cover;
+
+&__cont{
+  position: relative;
+
+  &__getstarted{
+    background: $app-backgroundgradiant;
+    border-radius: 5px;
+    color: #fff;
+    position: absolute;
+    top: -81px;
+    padding: 15px;
+    width: 96%;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+  }
+  &__title{
+    margin: 0px;
+    font-size: 24px;
+  }
+  &__btn , &__btn:hover{
+    background: #fff!important;
+    color: #000!important;
+    font-weight: 600;
+    font-size: 14px;
+    border: none!important;
+    margin-top: 0px;
+  }
+  
+}
+
+&__project{
+
+ &__card{
+background: url(./assets/images/buble.png) no-repeat top -98px right -99px #182132!important;
+border-radius: 3px;
+padding: 20px;
+}
+
+&__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 35px;
+  color: #fff;
+}
+ &__cardbody {
+  padding: 0px;
+}
+ &__cardtext{
+  font-size: 13px;
+  line-height: 25px;
+  font-weight: 300;
+  color: #fff;
+}
+&__cardtitle{
+  color: #fff;
+}
+.card-num {
+  position: absolute;
+  top: -11px;
+  color: #333;
+  left: 0px;
+  right: 0px;
+  background-image: linear-gradient(to bottom, #ff9623, #db6f02);
+  border-radius: 100%;
+  font-weight: bold;
+  width: 25px;
+  height: 25px;
+  margin: auto;
+  text-align: center;
+}
+.card1 {
+  position: relative;
+  top: 45px;
+}
+.card2{
+  position: relative;
+}
+}
+
+}
+
+/*Let's Talk Section*/
+
+
+.requestquote__sec{
+ background:  #182132;
+
+&__form{
+  background: url(./assets/images/buble.png) no-repeat top -75px right -65px #030617!important;
+  padding: 60px 30px!important;
+  border-radius: 10px;
+  margin: auto;
+
+&__title{
+  font-weight: 600;
+  color: #fff;
+  margin: 0px;
+}
+&__para{
+  color: #fff;
+  font-size: 13px;
+}
+&__icon{
+  color: #fff;
+  font-size: 15px;
+
+  span.material-symbols-outlined {
+    position: relative;
+    top: 4px;
+    margin-right: 6px;
+  }
+}
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background: transparent!important;
+  color: #fff!important;
+  border-bottom: 2px solid #fff!important;
+}
+
+&__regform
+{
+label {
+  color: #fff;
+  margin-top: 10px
+}
+input.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid  #fff;
+  border-radius: 0px;
+  padding: 4px;
+  color: #fff;
+  }
+  button.btn.btn-primary {
+  background: linear-gradient(to bottom, #ff9623, #db6f02);
+  border: navajowhite;
+  }
+  textarea.form-control {
+  border: 1px solid #fff;
+  background: transparent;
+  margin-top: 10px;
+  color:#fff
+  }
+  
+  .form-control:focus {
+  background: transparent!important;
+  box-shadow: none;
+  }
+} 
+}
+
+&__desc{
+color: #fff;
+}
+}
+
+/*Footer*/
+.footer__sec{
+  background:url(./assets/images/footerbg.png) #010715;
+  padding: 50px 0px 0px;
+
+&__cnt {
+
+  span.material-symbols-outlined {
+    font-size: 20px;
+    position: relative;
+    top: 4px;
+    margin-right: 6px;
+  }
+  ul li{
+  color: #fff;
+  font-size: 13px;
+}
+.subcribe-cnt p, .footer-logo p{
+  color: #fff;
+  font-size: 13px;
+}
+.subscribe-email {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 8px;
+}
+}
+&__heading{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-logo img{
+  width: 100px;
+}
+i.fa-brands.fa-facebook-f , 
+i.fa-brands.fa-twitter, i.fa-brands.fa-instagram, i.fa-brands.fa-linkedin-in{
+  color: #fff;
+}
+.social-media i {
+  margin-right: 10px;
+  padding-right: 19px;
+}
+.footer-bottom  p{
+  font-size: 13px;
+}
+}
+
+/*Let's Talk Section*/
+
+
+.auditrequest__sec{
+  background:  #182132;
+ 
+ &__form{
+   background: url(./assets/images/buble.png) no-repeat top -75px right -65px #030617!important;
+   padding: 60px 30px!important;
+   border-radius: 10px;
+   margin: auto;
+   margin-top: 50px !important;
+   
+ &__title{
+   font-weight: 600;
+   color: #fff;
+   margin: 0px;
+ }
+ &__para{
+   color: #fff;
+   font-size: 13px;
+ }
+ &__icon{
+   color: #fff;
+   font-size: 15px;
+ 
+   span.material-symbols-outlined {
+     position: relative;
+     top: 4px;
+     margin-right: 6px;
+   }
+ }
+ 
+ ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+   background: transparent!important;
+   color: #fff!important;
+   border-bottom: 2px solid #fff!important;
+ }
+ 
+ &__regform
+ {
+ label {
+   color: #fff;
+   margin-top: 10px
+ }
+ input.form-control {
+   background: transparent;
+   border: none;
+   border-bottom: 2px solid  #fff;
+   border-radius: 0px;
+   padding: 4px;
+   color: #fff;
+   }
+   button.btn.btn-primary {
+   background: linear-gradient(to bottom, #ff9623, #db6f02);
+   border: navajowhite;
+   }
+   textarea.form-control {
+   border: 1px solid #fff;
+   background: transparent;
+   margin-top: 10px;
+   color:#fff
+   }
+   
+   .form-control:focus {
+   background: transparent!important;
+   box-shadow: none;
+   }
+ } 
+ }
+ 
+ &__desc{
+ color: #fff;
+ }
+ }
+
+@media screen and (max-width: 640px) and (min-width: 320px) {
+   h2{
+    font-size: 22px!important;
+  }
+  li.nav-item {
+    margin-bottom: 10px;
+}
+  .about-section{
+    padding-top: 20px!important;
+  }
+    .row.feed-div {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 23px;
+        border-bottom: 2px solid #fff
+    }
+    .feedback-cnt img {
+        margin-top: 20px;
+    }
+    .card-project .card-project-cnt p, .card-project .card-project-cnt .btnexplore{
+        margin:20px;
+    }
+   
+    .footer-links{
+        border-top: 2px dotted #fff;
+        padding-top: 20px;
+    }
+    a.navbar-brand:after {
+       display: none;
+    }
+    .getstarted h2{
+        margin: 0px;
+        font-size: 15px!important;
+    }
+    .connect-btn{
+        font-size: 10px!important;
+        margin-top: -4px;
+    }
+    .nav-logo{
+        padding: 12px!important;
+    }
+    a.navbar-brand img{
+        width: 100px!important;
+    }
+   .custom-top{
+    position: relative;
+   }
+   .container.card-sec, .card1{
+    top: 0px!important;
+   }
+   .card1,.card2{
+    margin-bottom: 30px;
+   }
+   ::ng-deep ngx-spinner.spin-loader.ng-tns-c2720958613-0 {
+    display: none!important;
+    justify-content: center;
+}
+.getstarted{
+  top:-73px!important;
+}
+.modal-content{
+  width: 80%!important;
+}
+.fixed-top{
+  position: relative!important;
+}
+}
+@media (max-width: 768px) and (min-width: 480px){
+    .header-support{
+        display: none;
+    }
+    a.navbar-brand:after {
+        display: none;
+     }
+    .nav-logo{
+        padding: 12px!important;
+    }
+    a.navbar-brand img{
+        width: 100px!important;
+    }
+    .header__nav{
+        background: #182132!important;
+    }
+    .about-card{
+height: 100%;
+    }
+}

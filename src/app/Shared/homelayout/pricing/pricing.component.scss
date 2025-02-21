@@ -1,0 +1,40 @@
+.pricing-section{
+    background: #182132;
+    padding: 70px 0px;
+}
+.pricing-subtitle{
+    color: #0d6efd;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.pricing-title{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.price-subcnt{
+    font-size: 14px;    
+    color: #fff;
+}
+.price-card{
+    background: url(../../../../assets/images/buble.png) no-repeat top -98px right -99px #030617;
+    border-radius: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+.price-card .card-body{
+    color: #fff;
+}
+.price-card.text-center ul li {
+    line-height: 39px;
+}
+.price-card .material-symbols-outlined {
+    color: #376bfc;
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 40px;
+}

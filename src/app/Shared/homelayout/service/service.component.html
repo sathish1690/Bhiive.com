@@ -1,0 +1,64 @@
+<section class="service__sec pt-5 pb-5" id="services">
+ 
+      <div class="container about-cnt mb-4 mt-5">
+        <div class="row">
+          <div class="col col-md-12 col-12 col-lg-6">
+            <h3 class="service__sec__subtitle">What We Do  <span class="border-title"></span></h3>
+    
+             <h2 class="service__sec__title"> The Perfect Services <br>We're Offering</h2>
+    
+             <p class="service__sec__desc mt-4">we work tirelessly to ensure that your digital strategy is not only effective but also adaptable to the dynamic nature of the digital world. Embrace the collective wisdom of our team and watch your brand thrive online.
+            </p>
+            <p class="service__sec__desc">Our team comprises experienced professionals with over a decade of specialized experience in the digital marketing industry.</p>
+            <!-- <p class="service__sec__desc mt-4">
+                <button class="btn btn-primary">More Services</button>
+            </p> -->
+          </div>
+          <div class="col col-md-12 col-12 col-lg-6">
+            <div class="service__sec__cardsec">
+                <div class="row">
+                  <div class="col col-md-6 col-12 col-lg-6 mt-3" *ngFor="let servicedtls of servicecarddata; let listIndex=index">
+                    <div class="service__sec__card">
+                        <div class="service__sec__cardsec__cardbody">
+                            <img src="{{servicedtls.img}}" class="m-2 mb-3 img-fluid" alt="web">
+                          <h5 class="service__sec__cardsec__title m-2 mb-3" >{{servicedtls.title}} <br> {{servicedtls.substitle}}  <span class="material-symbols-outlined float-end" (click)="toogleModal(listIndex)">
+                            arrow_right_alt
+                            </span></h5>
+                         
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </section>
+
+    
+    <div *ngFor="let dummyObject of dummyObjectArray; let listIndex=index">
+	
+      <!-- <div (click)="toogleModal(listIndex)">
+        <div class="myRowStyle">
+          <p> {{dummyObject.title}}</p>
+        </div>
+      </div> -->
+    
+      <!-- The Modal -->
+      
+      <div *ngIf="dummyObject.expanded" class="modal" >
+        <!-- Modal content -->
+        <div class="modal-content">
+          <h4 class="pb-2 pt-2"> {{dummyObject.title}}  <span class="close" (click)="toogleModal(listIndex, dummyObject.expanded )">&times;</span></h4>
+         
+          <p>{{dummyObject.description}}</p>
+          <p class="text-end">
+          <button class="btn btn-danger" (click)="toogleModal(listIndex, dummyObject.expanded )">Close</button>
+        </p>
+        </div>
+      </div>
+      
+    </div>

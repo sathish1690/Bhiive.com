@@ -1,0 +1,107 @@
+<section class="requestquote__sec pt-5 pb-5" id="requestquote">
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="requestquotes-tit offset-lg-2 col-lg-8 col-12 col-sm-12 mb-5 align-self-center">
+            <p class="requestquote__sec__desc text-center">
+            Navigate the digital landscape with confidence as we hive your digital strategy for buzzing success. Connect with us to explore new digital horizons
+        </p>
+        </div>
+
+    </div>
+    <div class="row m-0">
+        <div class="col-lg-offset-1 col-lg-10 col-12 col-sm-12 requestquote__sec__form">
+            <div class="row">
+        <div class="col col-12 col-sm-12 col-lg-6">
+            <h3 class="requestquote__sec__form__title">Let's Talk</h3>
+            <p class="requestquote__sec__form__para mb-5">Ask us anything or just say Talk</p>
+
+           <p class="requestquote__sec__form__icon"><span class="material-symbols-outlined">call </span>+44736050221</p>
+           <p class="requestquote__sec__form__icon"><span class="material-symbols-outlined"> mail</span>info&#64;bhiive.com</p>
+        </div> 
+        <div class="col col-12 col-sm-12 col-lg-6">
+            <div class="requestquote__sec__form__regform">
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <div class="row">
+                  <div class="form-group col-lg-6 col-12 col-md-6">
+                    <label>First Name<span>*</span></label>
+                    <input matInput type="text" formControlName="firstname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['firstname'].errors }"/>
+                    <div *ngIf="submitted && f['firstname'].errors" class="invalid-feedback">
+                        <div *ngIf="f['firstname'].errors['required']">Firstname is required</div>
+                        <div *ngIf="f['firstname'].errors['minlength']">
+                          Firstname must be at least 3 characters
+                        </div>
+                        <div *ngIf="f['firstname'].errors['maxlength']">
+                            Firstname must not exceed 20 characters
+                        </div>
+                      </div>
+                  </div>
+              
+                  <div class="form-group col-lg-6 col-12 col-md-6">
+                    <label>Last Name<span>*</span></label>
+                    <input matInput type="text" formControlName="lastname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['lastname'].errors }"/>
+                    <div *ngIf="submitted && f['lastname'].errors" class="invalid-feedback">
+                      <div *ngIf="f['lastname'].errors['required']">Lastname is required</div>
+                      <div *ngIf="f['lastname'].errors['minlength']">
+                        Lastname must be at least 3 characters
+                      </div>
+                      <div *ngIf="f['lastname'].errors['maxlength']">
+                        Lastname must not exceed 20 characters
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-lg-6 col-12 col-md-6">
+                    <label>Email<span>*</span></label>
+                    <input matInput type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"/>
+                    <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                      <div *ngIf="f['email'].errors['required']">Email is required</div>
+                      <div *ngIf="f['email'].errors['email']">Email is invalid</div>
+                    </div>
+                  </div>
+              
+                  <div class="form-group col-lg-6 col-12 col-md-6">
+                    <label>Mobile No<span>*</span></label>
+                    <input matInput type="text" formControlName="mobile" class="form-control" appOnlynumber class="form-control" [ngClass]="{ 'is-invalid': submitted && f['mobile'].errors }" maxlength="12"/>
+                    <div *ngIf="submitted && f['mobile'].errors" class="invalid-feedback">
+                      <div *ngIf="f['mobile'].errors['required']">Mobile No is required</div>
+                      <div *ngIf="f['mobile'].errors['minlength']">
+                        Mobile No must be at least 10 characters
+                      </div>
+                      <div *ngIf="f['mobile'].errors['maxlength']">
+                        Mobile No must be at least 13 characters
+                      </div>
+                    </div>
+                  </div>
+              </div>
+                  <!-- <div class="form-group">
+                    <label>Subject<span>*</span></label>
+                    <input type="text" formControlName="subject" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['subject'].errors }"/>
+                    <div *ngIf="submitted && f['subject'].errors" class="invalid-feedback">
+                      <div *ngIf="f['subject'].errors['required']">
+                        Subject is required
+                      </div>
+                      
+                    </div>
+                  </div> -->
+                  <div class="form-group">
+                    <label>Message</label>
+                    <br>
+                    <textarea formControlName="message" class="form-control"  width="100%"></textarea>                    
+                  </div>
+              
+                  <br>
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Get A Quote</button>
+                   
+                  </div>
+                </form>
+              </div>
+              
+        </div>
+       </div>
+
+    </div>
+</div>
+  </div>
+</section>
